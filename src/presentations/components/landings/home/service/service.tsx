@@ -48,7 +48,7 @@ const itemService = [
   {
     id: 4,
     icon: Film,
-    title: "Audio Visual",
+    title: "AudioVisual",
     description:
       "Creación de videos profesionales para promoción, redes sociales o contenido corporativo. Grabación, edición y motion graphics",
   },
