@@ -34,18 +34,6 @@ export const ContactEmailTemplate = ({
         El cliente: {fullName} ({email}), Necesitas soluciones para su negocio!
       </Preview>
       <Container style={container}>
-        {/* Logo - Asegúrate de usar una URL absoluta */}
-        <Text style={title}>
-          <strong>Logo</strong>
-        </Text>
-        <Img
-          src={"https://www.basik.pro/logos/B ONDEANDO NARANJA.svg"}
-          width="150"
-          height="auto"
-          alt="Basik Logo"
-          style={logo}
-        />
-
         <Text style={title}>
           <strong>{fullName}</strong> necesita soluciones para su negocio
         </Text>
