@@ -1,0 +1,53 @@
+/* Estilos globales para el componente de teléfono */
+.react-international-phone-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilos para el input de texto del número de teléfono */
+.react-international-phone-input {
+  background-color: rgba(237, 236, 235, 0.05) !important;
+  color: #edeceb !important;
+  border: 0 !important;
+  outline: none !important;
+  padding-left: 1rem !important;
+  border-radius: 0 0.5rem 0.5rem 0;
+  height: 2.5rem !important;
+  box-shadow: none !important;
+  font-family: inherit !important;
+}
+
+/* Estilos para el botón que muestra la bandera y el código */
+.react-international-phone-country-selector-button {
+  background-color: rgba(237, 236, 235, 0.05) !important;
+  color: #edeceb;
+  border: 0 !important;
+  border-radius: 0.5rem 0 0 0.5rem;
+  box-shadow: none;
+  height: 2.5rem !important;
+  padding: 0.5rem 0.75rem !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Estilo al pasar el mouse por encima del botón */
+.react-international-phone-country-selector-button:hover {
+  background-color: rgba(237, 236, 235, 0.1);
+}
+
+/* Estilos para el dropdown (menú desplegable) de países */
+.react-international-phone-dropdown {
+  background-color: rgba(237, 236, 235, 0.2);
+  backdrop-filter: blur(10px);
+  color: #edeceb;
+  border: 1px solid rgba(237, 236, 235, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Estilo para los ítems del dropdown al pasar el mouse */
+.react-international-phone-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}

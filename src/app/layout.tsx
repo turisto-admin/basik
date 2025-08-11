@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "../presentations/styles/globals.css";
 import { neueKaine } from "@/presentations/fonts/fonts";
+import { Toaster } from "@/presentations/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "En Basik hacemos Menos ruido, Más dinero",
@@ -18,7 +19,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logos/B ONDEANDO NARANJA.svg" sizes="any" />
       </head>
-      <body className={`${neueKaine.className} antialiased`}>{children}</body>
+      <body className={`${neueKaine.className} antialiased`}>
+        {children}
+        <Toaster position="top-right" richColors />
+      </body>
     </html>
   );
 }

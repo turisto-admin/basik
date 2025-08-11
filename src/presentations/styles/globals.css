@@ -177,8 +177,8 @@ html {
   height: 100vh;
   inset: 0;
   margin: auto;
-  background: conic-gradient(from 0deg, #191919, #ff2a00, #edeceb, #a01708);
-  animation: spinBlob 8s linear infinite;
+  background: conic-gradient(from 0deg, #191919, #edeceb, #ff2a00, #a01708);
+  animation: spinBlob 6s linear infinite;
 }
 
 @keyframes spinBlob {

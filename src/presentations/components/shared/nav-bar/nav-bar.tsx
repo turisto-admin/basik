@@ -44,7 +44,7 @@ export const NavBar = () => {
           </Link>
 
           <Link
-            href={"#"}
+            href={"/contact"}
             className={`${spaceGrotesk.className} text-sm font-medium text-primary-white/80 hover:text-white transition-colors`}
           >
             <span>Contacto</span>
@@ -53,7 +53,7 @@ export const NavBar = () => {
 
         <div className="flex items-center space-x-2">
           <Link
-            href={"#"}
+            href={"/contact"}
             className="bg-primary-red transition-all duration-300 transform active:bg-secondary-red hover:bg-secondary-red hover:scale-105 text-white rounded-full py-2 px-4 md:px-6 md:h-10"
           >
             <span
@@ -85,7 +85,7 @@ export const NavBar = () => {
                   </Link>
 
                   <Link
-                    href={"#"}
+                    href={"/contact"}
                     className={`${spaceGrotesk.className} font-medium font-family-body text-primary-white/80 active:text-primary-red hover:text-primary-red transition-colors h-8`}
                   >
                     <span>Contacto</span>

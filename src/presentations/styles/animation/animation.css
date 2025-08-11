@@ -1,0 +1,114 @@
+.autoShow {
+  animation: autoShowAnimation;
+  animation-timeline: view();
+  animation-duration: 0.5s;
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animacion hero*/
+.fall-in {
+  animation-name: fallInAnimation;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fallInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-1 {
+  animation-delay: 0.2s;
+}
+
+.animate-hero-2 {
+  animation-delay: 0.5s;
+}
+
+.animate-hero-3 {
+  animation-delay: 0.8s;
+}
+
+.animate-hero-4 {
+  animation-delay: 1s;
+}
+
+.animate-hero-5 {
+  animation-delay: 1.4s;
+}
+
+/*animacion filosofia */
+.card-slide-left {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-timeline: view(100% 15%);
+  opacity: 0;
+}
+
+.card-slide-right {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-timeline: view(100% 15%);
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-view {
+  animation-name: fadeIn;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-timeline: view(70% 18%);
+  opacity: 0;
+}

@@ -5,19 +5,17 @@ import { Service } from "../../landings/home/service/service";
 import { Philosophy } from "../../landings/home/philosophy/philosophy";
 import { Testimonies } from "../../landings/home/testimonies/testimonies";
 import { NewsLetter } from "../../landings/home/newsletter/newsletter";
+import { Footer } from "../../landings/home/footer/footer";
+import { BackgroundAnimation } from "../../shared/background-animation/bg-animation";
 
 export const HomeComponent = () => {
   return (
-    <div>
+    <div className="relative">
       {/* nav */}
       <NavBar />
 
       {/* background animation */}
-      <div className="blob-outer-container">
-        <div className="blob-inner-container">
-          <div className="blob"></div>
-        </div>
-      </div>
+      <BackgroundAnimation />
 
       {/* Hero */}
       <Hero />
@@ -36,6 +34,9 @@ export const HomeComponent = () => {
 
       {/* newsletter */}
       <NewsLetter />
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 };

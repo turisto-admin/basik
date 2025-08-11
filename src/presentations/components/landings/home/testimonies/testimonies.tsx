@@ -16,7 +16,7 @@ import {
 } from "@/presentations/components/ui/carousel";
 import { spaceGrotesk } from "@/presentations/fonts/fonts";
 import Image from "next/image";
-
+import "@/presentations/styles/animation/animation.css";
 const testimonials = [
   {
     id: 1,
@@ -69,7 +69,7 @@ const loopedTestimonials = [...testimonials, ...testimonials, ...testimonials];
 export const Testimonies = () => {
   return (
     <section className="relative mt-28">
-      <div className="mb-8 md:mb-15">
+      <div className="mb-8 md:mb-15 autoShow">
         <h2
           className={`${spaceGrotesk.className} font-black text-center text-5xl text-primary-white`}
         >
@@ -85,7 +85,7 @@ export const Testimonies = () => {
 
 const CarouselTestimoniesMobile = () => {
   return (
-    <div className="block md:hidden">
+    <div className="block fade-in-view md:hidden">
       <Carousel
         orientation="horizontal"
         opts={{
@@ -145,7 +145,7 @@ const CarouselTestimoniesMobile = () => {
 
 const CarourelTestimoniesDesktop = () => {
   return (
-    <div className="hidden md:grid md:grid-cols-3 md:gap-x-6 md:mx-16 xl:mx-28">
+    <div className="hidden md:grid fade-in-view md:grid-cols-3 md:gap-x-6 md:mx-16 xl:mx-28">
       {/* Carousel 1 */}
       <div className="">
         <Carousel

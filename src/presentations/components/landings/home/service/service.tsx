@@ -6,71 +6,91 @@ import {
   CarouselItem,
 } from "@/presentations/components/ui/carousel";
 import { neueKaine, spaceGrotesk } from "@/presentations/fonts/fonts";
-import { Meh } from "lucide-react";
+import {
+  Bot,
+  CodeXml,
+  Cpu,
+  Film,
+  Headset,
+  Meh,
+  PencilRuler,
+} from "lucide-react";
 import Image from "next/image";
+import "@/presentations/styles/animation/animation.css";
 
 const itemService = [
   {
     id: 1,
     icon: Meh,
     title: "Google Ads",
+    path: "/icon-services/google-ads.svg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Publicidad en el mayor buscador del mundo para captar tráfico cualificado. Anuncios en Search, Display y YouTube para impulsar conversiones.",
   },
 
   {
     id: 2,
     icon: Meh,
-    title: "Diseño Grafico",
+    title: "Meta Ads",
+    path: "/icon-services/meta-ads.svg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Campañas publicitarias en Facebook e Instagram para llegar a tu audiencia ideal. Segmentación avanzada y creativos impactantes para maximizar resultados.",
   },
 
   {
     id: 3,
-    icon: Meh,
-    title: "Audio visual",
+    icon: PencilRuler,
+    title: "Diseño Grafico",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Construimos una identidad visual que vende. Nuestro diseño no es solo estético, es estratégico y está pensado para generar un impacto directo en tus clientes.",
   },
 
   {
     id: 4,
-    icon: Meh,
-    title: "Desarrollo Web",
+    icon: Film,
+    title: "Audio visual",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Creación de videos profesionales para promoción, redes sociales o contenido corporativo. Grabación, edición y motion graphics",
   },
 
   {
     id: 5,
-    icon: Meh,
-    title: "Automatizaciones",
+    icon: CodeXml,
+    title: "Desarrollo Web",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
-  },
-  {
-    id: 6,
-    icon: Meh,
-    title: "Agentes de AI",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Creamos sitios web y aplicaciones moviles. Diseñamos experiencias digitales que no solo se ven bien, sino que impulsan tus ventas y crecimiento.",
   },
 
   {
-    id: 7,
-    icon: Meh,
-    title: "Consultorias",
+    id: 6,
+    icon: Cpu,
+    title: "Automatizaciones",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Optimizamos tus procesos para que tu negocio funcione sin esfuerzo. Automatizamos tareas repetitivas para que te concentres en lo que realmente importa.",
+  },
+  {
+    id: 7,
+    icon: Bot,
+    title: "Agentes de AI",
+    description:
+      "Asistentes inteligentes automatizados para atención al cliente, ventas o gestión de tareas. Soluciones personalizadas con IA para optimizar procesos.",
   },
 
   {
     id: 8,
+    icon: Headset,
+    title: "Consultorias",
+    description:
+      "Estrategias personalizadas para aumentar tus ventas y posicionar tu marca. Análisis de mercado, planes de acción y métricas para lograr tus objetivos comerciales",
+  },
+
+  {
+    id: 9,
     icon: Meh,
+    path: "/icon-services/social-media.png",
     title: "Social Media",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ligula mattis elit lacinia, ut tincidunt nunc vestibulum. Nullam convallis",
+      "Administración profesional de tus redes sociales: contenido, interacción y publicidad. Crecimiento de audiencia y engagement con estrategias adaptadas a cada plataforma. ",
   },
 ];
 
@@ -80,18 +100,18 @@ export const Service = () => {
       <div className="relative md:grid grid-cols-2">
         <div className="absolute md:static z-20 md:z-0 -top-12 md:top-auto left-6 md:left-auto md:pl-16">
           <h2
-            className={`${spaceGrotesk.className} font-bold text-primary-white text-3xl md:text-6xl xl:text-8xl`}
+            className={`${spaceGrotesk.className} font-bold text-primary-white text-3xl md:text-6xl xl:text-8xl autoShow`}
           >
             No solo es un anuncio
           </h2>
           <p
-            className={`${neueKaine.className} font-medium text-primary-white text-xl md:text-7xl xl:text-6xl md:mt-4`}
+            className={`${neueKaine.className} font-medium text-primary-white text-xl md:text-7xl xl:text-6xl md:mt-4 autoShow`}
           >
             es tu futuro
           </p>
         </div>
 
-        <div className="md:relative md:overflow-hidden md:[mask-image:linear-gradient(to_right,transparent,white_8%,white_80%,transparent)]">
+        <div className="md:relative md:overflow-hidden md:[mask-image:linear-gradient(to_right,transparent,white_8%,white_80%,transparent)] fade-in-view">
           <Carousel
             opts={{
               align: "center",
@@ -109,13 +129,22 @@ export const Service = () => {
 
                 return (
                   <CarouselItem key={service.id} className="pl-4 basis-4/5">
-                    <div className="p-7 bg-primary-white/[0.1] backdrop-blur-xl rounded-2xl">
+                    <div className="p-7 bg-primary-white/[0.1] backdrop-blur-xl rounded-2xl min-h-[250px] md:min-h-0 flex flex-col">
                       <div className="flex items-center space-x-2">
                         <div>
-                          <IconComponent
-                            size={24}
-                            className="text-primary-red"
-                          />
+                          {service.path ? (
+                            <Image
+                              src={service.path}
+                              width={24}
+                              height={24}
+                              alt={service.path}
+                            />
+                          ) : (
+                            <IconComponent
+                              size={24}
+                              className="text-primary-red"
+                            />
+                          )}
                         </div>
                         <p
                           className={`${spaceGrotesk.className} text-primary-red font-bold text-xl`}
