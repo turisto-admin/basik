@@ -5,8 +5,10 @@ import { neueKaine } from "@/presentations/fonts/fonts";
 import { Toaster } from "@/presentations/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "En Basik hacemos Menos ruido, Más dinero",
-  description: "Marketing",
+  title:
+    "Basik - Marketing Estratégico Sin Distracciones | Menos Ruido, Más Ventas",
+  description:
+    "Eliminamos lo innecesario del marketing tradicional. Enfocados 100% en conversiones, crecimiento medible y estrategias que generan resultados reales para tu negocio. Sin promesas vacías, solo lo básico hecho bien.",
 };
 
 export default function RootLayout({
