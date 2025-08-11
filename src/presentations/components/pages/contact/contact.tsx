@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 
 import "react-international-phone/style.css";
@@ -28,7 +28,6 @@ import {
   ContactSchema,
 } from "@/application/landing/schemas/contact.schema";
 import { zodResolver } from "@hookform/resolvers/zod";
-import z from "zod";
 import { SendEmailContact } from "@/application/use-cases/contact/send-email.action";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";

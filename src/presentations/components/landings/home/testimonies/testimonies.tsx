@@ -2,10 +2,8 @@
 import Autoplay from "embla-carousel-autoplay";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/presentations/components/ui/card";

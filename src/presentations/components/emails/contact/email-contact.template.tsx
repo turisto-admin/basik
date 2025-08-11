@@ -1,10 +1,8 @@
 import {
   Body,
-  Button,
   Container,
   Head,
   Html,
-  Img,
   Link,
   Preview,
   Section,
@@ -107,11 +105,6 @@ const container = {
   boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
 };
 
-const logo = {
-  margin: "0 auto 20px",
-  display: "block",
-};
-
 const title = {
   fontSize: "22px",
   fontWeight: "bold",
@@ -160,16 +153,8 @@ const descriptionText = {
   margin: "8px 0",
 };
 
-const link = {
-  textDecoration: "none",
-};
-
 const rowSpacing = {
   margin: "20px 0",
-};
-
-const centerColumn = {
-  textAlign: "center" as const,
 };
 
 const footer = {

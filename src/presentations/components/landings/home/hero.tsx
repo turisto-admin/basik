@@ -66,7 +66,7 @@ export const Hero = () => {
       </div>
       <div className="mt-16 fall-in animate-hero-5">
         <p className="text-sm md:text-base text-primary-white/85 font-bold text-center w-full pt-3 italic">
-          "Clicks que cuentan Ventas que escalan"
+          &quot;Clicks que cuentan Ventas que escalan&quot;
         </p>
       </div>
     </section>

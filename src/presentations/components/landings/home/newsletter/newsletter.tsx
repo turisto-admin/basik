@@ -1,6 +1,5 @@
 "use client";
 import { spaceGrotesk } from "@/presentations/fonts/fonts";
-import clsx from "clsx";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
