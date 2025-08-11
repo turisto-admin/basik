@@ -9,6 +9,7 @@ import {
   Text,
   Row,
   Column,
+  Img,
 } from "@react-email/components";
 
 interface ContactEmailFormProps {
@@ -37,13 +38,13 @@ export const ContactEmailTemplate = ({
         <Text style={title}>
           <strong>Logo</strong>
         </Text>
-        {/* <Img
-          src={"https://www.basik.pro/logos/logo-basik-oscuro.svg"}
-          width="120"
+        <Img
+          src={"https://www.basik.pro/logos/B ONDEANDO NARANJA.svg"}
+          width="150"
           height="auto"
           alt="Basik Logo"
           style={logo}
-        /> */}
+        />
 
         <Text style={title}>
           <strong>{fullName}</strong> necesita soluciones para su negocio
@@ -163,6 +164,11 @@ const footer = {
   textAlign: "center" as const,
   marginTop: "30px",
   lineHeight: 1.5,
+};
+
+const logo = {
+  width: "150px",
+  height: "150px",
 };
 
 const footerLink = {
