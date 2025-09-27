@@ -6,5 +6,7 @@ export const ContactSchema = z.object({
   email: z.email("Ingresa un email válido").toLowerCase(),
   phone: z.string().min(5, "Ingresa un teléfono válido"),
   revenue: z.string().toLowerCase(),
-  description: z.string().min(10, "La descripción debe tener al menos 10 caracteres").toLowerCase()
+  description: z.string().min(10, "La descripción debe tener al menos 10 caracteres").toLowerCase(),
+  dateMeeting: z.string().optional(),
+  timeMeeting: z.string().optional()
 });

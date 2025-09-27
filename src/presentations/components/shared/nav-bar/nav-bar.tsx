@@ -4,7 +4,12 @@ import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 import { Equal } from "lucide-react";
 import { spaceGrotesk } from "@/presentations/fonts/fonts";
 
-export const NavBar = () => {
+interface Props {
+  hiddenPhilosophy?: boolean;
+  servicePath?: boolean;
+}
+
+export const NavBar = ({ hiddenPhilosophy, servicePath }: Props) => {
   return (
     <header className="sticky z-50 top-0 bg-primary-black/20 backdrop-blur-xl border-b border-primary-white/[0.3]">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
@@ -30,7 +35,7 @@ export const NavBar = () => {
 
         <nav className="hidden md:flex items-center space-x-6">
           <Link
-            href={"/#service"}
+            href={servicePath ? "/tech/#service" : "/#service"}
             className={`${spaceGrotesk.className} text-sm font-medium text-primary-white/80 hover:text-white transition-colors`}
           >
             <span>Servicios</span>
@@ -38,6 +43,7 @@ export const NavBar = () => {
 
           <Link
             href={"/#philosophy"}
+            hidden={hiddenPhilosophy}
             className={`${spaceGrotesk.className} text-sm font-medium text-primary-white/80 hover:text-white transition-colors`}
           >
             <span>Filosofia</span>

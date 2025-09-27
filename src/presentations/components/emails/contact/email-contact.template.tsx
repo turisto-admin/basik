@@ -9,7 +9,6 @@ import {
   Text,
   Row,
   Column,
-  Img,
 } from "@react-email/components";
 
 interface ContactEmailFormProps {
@@ -19,7 +18,6 @@ interface ContactEmailFormProps {
   revenue: string;
   description: string;
 }
-
 export const ContactEmailTemplate = ({
   fullName,
   email,
@@ -152,11 +150,6 @@ const footer = {
   textAlign: "center" as const,
   marginTop: "30px",
   lineHeight: 1.5,
-};
-
-const logo = {
-  width: "150px",
-  height: "150px",
 };
 
 const footerLink = {
