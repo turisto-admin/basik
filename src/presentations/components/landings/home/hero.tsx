@@ -6,7 +6,7 @@ import "@/presentations/styles/animation/animation.css";
 
 export const Hero = () => {
   return (
-    <section className="relative h-[500px]">
+    <section className="relative h-[400px]">
       <div className="flex flex-col md:flex-row space-y-1 md:space-y-0 justify-center items-center pt-28">
         <div className="flex items-center space-x-2 mr-3 fall-in animate-hero-1">
           <Image
