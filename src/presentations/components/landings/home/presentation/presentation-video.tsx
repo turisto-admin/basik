@@ -25,10 +25,7 @@ export const PresentationVideo = () => {
           </p>
 
           <Link
-            href={
-              "https://wa.me/17868218592?text=Hola! Me gustaría saber más sobre sus servicios."
-            }
-            target="_blank"
+            href={"/contact"}
             className={`${spaceGrotesk.className} bg-primary-red active:bg-secondary-red hover:bg-secondary-red transition-all duration-300 transform hover:scale-105 px-8 py-3 rounded-full flex items-center justify-center gap-2 whitespace-nowrap font-medium cursor-pointer w-full md:w-fit mt-6 fade-in-view`}
           >
             <span className="text-primary-white">
