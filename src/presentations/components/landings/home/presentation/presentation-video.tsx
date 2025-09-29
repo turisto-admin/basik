@@ -1,17 +1,17 @@
 import { spaceGrotesk } from "@/presentations/fonts/fonts";
 import { ArrowRight } from "lucide-react";
 import "@/presentations/styles/animation/animation.css";
-import VideoPresentationWistia from "../../video/video";
 import Link from "next/link";
+import VideoMuxPlayer from "../../video/video-mux-player";
 
 export const PresentationVideo = () => {
   return (
-    <section className="relative mx-5 md:mx-28 lg:mx-40 mt-16 mb-16">
+    <section className="relative mx-5 md:mx-28 lg:mx-40 mt-16 mb-28">
       <div className="flex flex-col items-center justify-center">
         {/* Contenedor del video */}
         <div className="w-full flex justify-center items-center mt-5">
           <div className="relative w-full" style={{ paddingTop: "26.25%" }}>
-            <VideoPresentationWistia />
+            <VideoMuxPlayer />
           </div>
         </div>
 
