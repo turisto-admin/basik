@@ -26,6 +26,7 @@ export default function VideoMuxPlayer() {
     <MuxPlayer
       playbackId="oE0102pmWDq762eVFfw68tfmr7jZjahfapv7IL1KN3HL4"
       accentColor="#ea580c"
+      playsInline={true}
       autoPlay={canAutoplay ? "true" : false}
       metadata={{
         videoTitle: "Test VOD",
