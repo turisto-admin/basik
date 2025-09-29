@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import MuxPlayer from "@mux/mux-player-react";
 
 export default function VideoMuxPlayer() {
