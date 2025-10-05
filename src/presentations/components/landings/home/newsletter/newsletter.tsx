@@ -68,9 +68,9 @@ export const NewsLetter = () => {
 
           <div className="hidden md:block">
             <Image
-              src={"/assets/laptop.jpg"}
-              height={800}
-              width={800}
+              src={"/assets/laptop-basik-2.png"}
+              width={1280}
+              height={980}
               alt="mockup-newsletter"
               className="hidden md:block"
             />
