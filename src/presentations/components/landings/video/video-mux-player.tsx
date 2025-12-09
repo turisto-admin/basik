@@ -4,7 +4,7 @@ import MuxPlayer from "@mux/mux-player-react";
 export default function VideoMuxPlayer() {
   return (
     <MuxPlayer
-      playbackId="oE0102pmWDq762eVFfw68tfmr7jZjahfapv7IL1KN3HL4"
+      playbackId="vJrXcN02Au1TGbUCRfmjT7B026Sn01MHjnqMtVt6lHz021k"
       accentColor="#ea580c"
       playsInline
       autoPlay
